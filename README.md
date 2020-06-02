@@ -1,5 +1,5 @@
 
-# SQL Server and Azure SQL Connector for Apache Spark
+# Apache Spark Connector for SQL Server and Azure SQL
 This library contains the source code for the Apache Spark Connector for SQL Server and Azure SQL.
 
 [Apache Spark](https://spark.apache.org/) is a unified analytics engine for large-scale data processing.
