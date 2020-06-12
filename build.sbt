@@ -8,14 +8,9 @@ scalaVersion := "2.11.12"
 
 val sparkVersion = "2.4.0"
 
+javacOptions ++= Seq("-source", "1.8", "-target", "1.8", "-Xlint")
+
 libraryDependencies ++= Seq(
-  // %% is used for project that was built with scala. This is because
-  // sbt will append scala version to the artifactID
-  // Details in http://www.scala-sbt.org/0.13/docs/Library-Dependencies.html
-  //
-  // "provided" means that the jar file will be excluded from the fat-jar
-  // of this package.
-  //
   "org.apache.spark" %% "spark-sql" % sparkVersion % "provided",
   "org.scalatest" %% "scalatest" % "3.0.5" % "test",
   "com.novocode" % "junit-interface" % "0.11" % "test",
